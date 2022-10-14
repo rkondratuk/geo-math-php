@@ -67,5 +67,5 @@ $nearestPolarPoint = $arcSegmentFirst->calcNearestPoint($polarPoint3);
 $nearest3dPoint = $nearestPolarPoint->buildCartesian3DPoint();
 
 // Use Earth radius in miles for calculations in miles
-Polar3dPoint::EARTH_RADIUS_IN_METERS;
+$radiusInMiles = Polar3dPoint::EARTH_RADIUS_IN_MILES;
 ```
