@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Geo calculations library",
     "keywords": ["Polar", "Cartesian", "Coordinates", "GEO", "Mathematics"],
-    "homepage": "https://github.com/rkondratuk/php-geo-math",
+    "homepage": "https://github.com/rkondratuk/geo-math-php",
     "license": ["MIT"],
     "require": {
         "php": ">=5.4"
