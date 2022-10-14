@@ -1,0 +1,12 @@
+<phpunit
+    bootstrap="../phpunit-bootstrap.php"
+    cacheResult = "false"
+    verbose="true"
+    colors="true">
+
+  <testsuites>
+    <testsuite name="all">
+      <directory>../src/Test</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>

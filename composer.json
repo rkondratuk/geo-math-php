@@ -1,0 +1,25 @@
+{
+    "name": "rkondratuk/geo-math-php",
+    "type": "library",
+    "description": "Geo calculations library",
+    "keywords": ["Polar", "Cartesian", "Coordinates", "GEO", "Mathematics"],
+    "homepage": "https://github.com/rkondratuk/php-geo-math",
+    "license": ["MIT"],
+    "require": {
+        "php": ">=5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.7.18"
+    },
+    "autoload": {
+        "psr-4": {
+            "PhpGeoMath\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Roman Kondratuk",
+            "email": "rkodratuk@gmail.com"
+        }
+    ]
+}
