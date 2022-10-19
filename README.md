@@ -3,7 +3,7 @@
 
 #### Add to composer
 ```bash
-composer require rkondratuk/geo-math-php
+composer require rkondratuk/geo-math-php:^1
 ```
 
 #### Example:
@@ -66,6 +66,9 @@ $arcSegmentFirst = new GeoSegment($polarPoint1, $polarPoint2);
 $nearestPolarPoint = $arcSegmentFirst->calcNearestPoint($polarPoint3);
 $nearest3dPoint = $nearestPolarPoint->buildCartesian3DPoint();
 
+// Nearest distance from point-3 to segment (point-1, point-2)
+$nearestGeoDistance = $nearestPolarPoint->calcGeoDistanceToPoint($polarPoint3);
+
 // Use Earth radius in miles for calculations in miles
-$radiusInMiles = Polar3dPoint::EARTH_RADIUS_IN_MILES;
+Polar3dPoint::EARTH_RADIUS_IN_MILES;
 ```
