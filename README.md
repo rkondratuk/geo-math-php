@@ -1,6 +1,9 @@
 # Geo-math-php
 > PHP library for calculations in the Cartesian or polar coordinate system.
 
+#### Requirements
+- PHP: >=5.4
+
 #### Add to composer
 ```bash
 composer require rkondratuk/geo-math-php:^1
