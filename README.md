@@ -69,7 +69,8 @@ $arcSegmentFirst = new GeoSegment($polarPoint1, $polarPoint2);
 $nearestPolarPointX = $arcSegmentFirst->calcNearestPoint($polarPoint3);
 
 /*
- * Shortest distance from point-3 to segment [point-1, point-2] is distance between point-3 and point-x
+ * Shortest distance from point-3 to segment [point-1, point-2] 
+ * is distance between point-3 and point-x
  */
 $nearestGeoDistance = $nearestPolarPointX->calcGeoDistanceToPoint($polarPoint3);
 
