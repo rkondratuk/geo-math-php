@@ -76,3 +76,5 @@ $nearestGeoDistance = $nearestPolarPointX->calcGeoDistanceToPoint($polarPoint3);
 // Use Earth radius in miles for calculations in miles
 Polar3dPoint::EARTH_RADIUS_IN_MILES;
 ```
+
+Bitcoin address for donates: `bc1qwa5wmta36e8a2wrvpa9jyplgzg4pjad7grwm29`
