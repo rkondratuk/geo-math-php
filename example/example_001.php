@@ -48,15 +48,16 @@ $convertedPolarPoint1 = $cartesianPoint1->buildPolar3dPoint();
 $geoDistance = $polarPoint2->calcGeoDistanceToPoint($polarPoint1);
 
 /*
- * Calc the nearest point from GEO segment to some GEO point
+ * Calc the nearest point (point-x) from GEO segment [point-1, point-2] to some GEO point-3
+ * Point (point-x) placed between [point-1, point-2]
  */
-
 $arcSegmentFirst = new GeoSegment($polarPoint1, $polarPoint2);
-$nearestPolarPoint = $arcSegmentFirst->calcNearestPoint($polarPoint3);
-$nearest3dPoint = $nearestPolarPoint->buildCartesian3DPoint();
+$nearestPolarPointX = $arcSegmentFirst->calcNearestPoint($polarPoint3);
 
-// Nearest distance from point-3 to segment (point-1, point-2)
-$nearestGeoDistance = $nearestPolarPoint->calcGeoDistanceToPoint($polarPoint3);
+/*
+ * Shortest distance from point-3 to segment [point-1, point-2] is distance between point-3 and point-x
+ */
+$nearestGeoDistance = $nearestPolarPointX->calcGeoDistanceToPoint($polarPoint3);
 
 // Use Earth radius in miles for calculations in miles
 Polar3dPoint::EARTH_RADIUS_IN_MILES;
